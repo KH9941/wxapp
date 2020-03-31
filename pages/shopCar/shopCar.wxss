@@ -1,0 +1,32 @@
+/* pages/shopCar/shopCar.wxss */
+.box{
+  height: 200px;
+  /* background: #fff; */
+}
+.top{
+  padding: 10px 0;
+  background: lightblue;
+  display: flex;
+}
+.top>view{
+  flex: 1;
+  text-align: center;
+}
+.commodity>view{
+  display: flex;
+  justify-content: space-between;
+}
+.commodity>view>view{
+  flex: 1;
+  text-align: center;
+}
+.red{
+  background: yellowgreen;
+}
+.hide{
+  visibility: hidden
+}
+.total{
+  font-size: 2rem;
+  font-weight: bold;
+}

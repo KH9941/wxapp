@@ -1,0 +1,13 @@
+<view class="pad">
+  <view class="logo">
+    <image src="{{list.images.large}}"></image>
+  </view>
+  <view class="title">{{list.title}}</view>
+  <view>评分：{{list.rating.average}}</view>
+  <view wx:for="{{list.directors}}" wx:key="index">导演：{{item.name}}</view>
+  <view>主演：
+    <text wx:for="{{list.casts}}" wx:key="id">{{item.name}} </text>
+  </view>
+  <view>简介:</view>
+  <view>{{list.summary}}</view>
+</view>

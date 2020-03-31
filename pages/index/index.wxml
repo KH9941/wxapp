@@ -1,0 +1,24 @@
+<view>
+  <swiper autoplay circular interval="{{interval}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <!-- <view class="swiper-item {{item}}"></view> -->
+        <image src="/assects/imgs/{{item}}.jpg"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="banner">
+  <view>豆瓣电影</view>
+  <view>源码出品，必属精品</view>
+</view>
+<navigator url="/pages/list/list?port={{item.url}}" wx:for="{{list}}" wx:key="index">
+  <view class="nav">
+    <view>{{item.name}}</view>
+    <view>></view>
+  </view>
+</navigator>
+<view class="ppp ">
+ssssssssssssssssssssssssssssssssssssss
+  <image class="sss" src="/assects/imgs/0.jpg"></image>
+</view>

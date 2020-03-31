@@ -1,0 +1,19 @@
+<!--pages/list/list.wxml-->
+<view class="title">{{title}}</view>
+<navigator url="/pages/details/details?id={{item.id}}"  wx:for="{{list}}" wx:key="id">
+  <view class="box">
+    <view>
+      <image src="{{item.images.large}}"></image>
+    </view>
+    <view>
+      <view>
+        <view>{{item.title}}</view>
+        <view style="color:tomato">{{item.rating.average}}</view>
+      </view>
+      <view class="mar">{{item.original_title}}</view>
+      <view>导演:
+        <text wx:for="{{item.directors}}" wx:key="index">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</navigator>

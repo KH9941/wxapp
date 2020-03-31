@@ -1,0 +1,35 @@
+.banner {
+  padding: 20px;
+  color: #999;
+}
+
+.banner>view:nth-child(1) {
+  font-size: 24px;
+  color: #000;
+}
+
+navigator {
+  margin: 10px;
+}
+
+.nav {
+  background: tomato;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ppp{
+  /* background: red; */
+  height: 200px;
+  position: relative
+}
+.sss{
+  width: 100%;
+  /* height: 100%; */
+  position:absolute; 
+  left: 0;
+  top: 0;
+  background-size:100% 100%;
+  z-index: -1;
+}
